@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link re="stylesheet" href="{{ url_for('static', filename='static/style.css') }}">
+  <style>
+    .global {
+      font-family: Helvetica;
+      display: flex;
+      background-color: #17223b;
+      height: 100vh;
+      margin: 0%;
+      z-index: 0;
+      position: relative;
+    }
+
+    .conteudo {
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      justify-content: space-between;
+      flex-direction: column;
+      position: relative;
+      margin-left: 50px;
+    }
+
+    .texto {
+      color: #dadada;
+      margin-top: 40px;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body class="global">
+  <div class="conteudo">
+    <h1 class="texto">Este é meu Currículo</h1>
+    <h2 class="texto">Amanda Silva de Souza</h2>
+
+    <div class="texto" style="font-size: 20px;">
+      Clique no botão abaixo para acessar as Informações <strong> Sobre Mim </strong>
+      </br> <button class="button"> <a href="/sobre">Clique Aqui!</a> </button>
+    </div>
+
+    <div class="texto" style="font-size: 20px;">
+      Clique no botão abaixo para acessar as informações sobre <strong> Minha Experiência </strong>
+      </br> <button class="button"> <a href="/experiencia">Clique Aqui!</a> </button>
+    </div>
+
+    <div class="texto" style="font-size: 20px;">
+      Clique no botão abaixo para acessar as informações sobre <strong> Minha Formação </strong>
+      </br> <button class="button"> <a href="/formacao">Clique Aqui!</a> </button>
+    </div>
+
+    <div class="texto" style="font-size: 20px;">
+      Clique no botão abaixo para acessar as informações sobre <strong> Meus Contatos </strong>
+      </br> <button class="button"> <a href="/contato">Clique Aqui!</a> </button>
+    </div>
+  </div>
+</body>
+
+</html>
